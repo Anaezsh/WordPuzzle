@@ -1,0 +1,254 @@
+body {
+  background: #F5FDFF;
+}
+#container {
+  width: 500px;
+  height: 500px;
+  margin: 30px auto;
+  background: #87AAD0;
+}
+#menu {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#paws {
+  display: none;
+  position: absolute;
+  top: 0%;
+  right: 5%;
+  width: 50px;
+  height: 500px;
+  background: url("pawswb.png");
+  background-size: contain;
+}
+#container ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+#container li {
+  list-style: none;
+  width: 270px;
+  height: 60px;
+  background: #0A2C59;
+  margin: 5px 0;
+  box-sizing: border-box;
+  text-align: right;
+  line-height: 60px;
+  font-size: 30px;
+  color: #3A5C8A;
+  cursor: pointer;
+  transition: .3s;
+}
+#container li i {
+  margin: 0 15px;
+}
+#container li:hover, .button2:hover {
+  color: #F2C858;
+  text-shadow: 0 0 20px #F2C858;
+}
+#cat1 {
+  display: none;
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  transform-origin: right bottom;
+  transform: scale(.5);
+}
+#cat2 {
+  display: none;
+  position: absolute;
+  bottom: 5%;
+  right: 10%;
+  transform-origin: right bottom;
+  transform: scale(.08);
+}
+#greet {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+}
+#greet p {
+  opacity: 0;
+  margin: 5px;
+  color: #0A2C59;
+  font-size: 25px;
+  text-align: left;
+}
+#whatNow {
+  display: none;
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  color: #0A2C59;
+  font-size: 25px;
+  text-align: left;
+}
+#training {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.button2 {
+  width: 60px;
+  height: 60px;
+  background: #0A2C59;
+  margin: 0;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 60px;
+  font-size: 30px;
+  color: #3A5C8A;
+  cursor: pointer;
+  transition: .3s;
+}
+#back {
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+.cardBox {
+  perspective: 500px;
+}
+.cardBox, #board, #sheet {
+  display: none;
+  width: 70%;
+  height: 50%;
+  position: absolute;
+  top: 15%;
+  right: 15%;
+}
+.card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: .5s ease;
+  box-shadow: 0 0 20px black;
+}
+.cardlight .card-front, .cardblack .card-back {
+  background: #F5FDFF;
+  color: #030210;
+}
+.cardblack .card-front, .cardlight .card-back {
+  background: #030210;
+  color: #F5FDFF;
+}
+.card-front, .card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 50px;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-back {
+  transform: rotateY(180deg);
+}
+.cardBox:active .card {
+  transform: rotateY(180deg);
+}
+#sheet {
+  background: url("sheetwb.png");
+  background-size: cover;
+  box-shadow: 0 0 20px black;
+}
+#sheet p {
+  margin: 0;
+  width: 100%;
+  font-size: 50px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #0A2C59;
+}
+#board p {
+  width: 100%;
+  font-size: 50px;
+  text-align: center;
+  color: #0A2C59;
+  margin: 10px auto;
+}
+#cat3 {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  transform-origin: right top;
+  transform: scale(.15);
+}
+#notebook {
+  position: absolute;
+  bottom: 0%;
+  left: 3%;
+  transform-origin: left bottom;
+  transform: scale(.2);
+}
+#coffee {
+  position: absolute;
+  bottom: 3%;
+  right: 5%;
+  transform-origin: right bottom;
+  transform: scale(.15);
+}
+#controls1, #controls2, #controls3 {
+  display: none;
+  width: 40%;
+  height: 60px;
+  position: absolute;
+  bottom: 20%;
+  right: 30%;
+}
+#play, #random, #randomW {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+#stop, #next, #show {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+}
+#holes, #cubs {
+  margin: 20px auto;
+  text-align: center;
+}
+.cub1, .cub2 {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  margin: 2px;
+  vertical-align: bottom;
+}
+.cub1 {
+  background-color: #3A5C8A;
+  box-shadow: inset 0px 0px 5px rgba(154, 147, 140, 0.5);
+}
+.cub2 {
+  background-color: #F2C858;
+  font-size: 20px;
+  line-height: 30px;
+  box-shadow: 0px 0px 2px;
+  color: #0A2C59;
+  cursor: pointer;
+}
+#input {
+  display: none;
+  width: 90%;
+  color: #F2C858;
+  background: #3A5C8A;
+  font-size: 50px;
+  font-family: "Times new roman";
+  margin: 0 4.5%;
+  border: 2px solid #0A2C59;
+}
